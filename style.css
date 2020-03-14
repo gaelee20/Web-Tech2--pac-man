@@ -1,0 +1,201 @@
+   body {
+       background-color: black;
+       color: white;
+       font-family: Press start;
+       text-align: center;
+       margin: 10px 0;
+
+   }
+
+   @font-face {
+       font-family: Press Start;
+       src: url(prstartk.ttf);
+   }
+
+   nav {
+       display: grid;
+       grid-template-columns: auto auto auto auto;
+       margin: 0 10%;
+       font-size: 20px;
+   }
+
+   p {
+       font-size: 30px;
+   }
+
+   a {
+       text-decoration: none;
+       color: white;
+   }
+
+   @keyframes hover {
+       from {
+           color: white;
+       }
+
+       to {
+           color: #FCC12B;
+       }
+   }
+
+   a:hover {
+       -webkit-animation: hover 0.5s linear 0s infinite normal none running;
+       animation: hover 0.5s linear 0s infinite none running;
+   }
+
+
+
+   .home_animation img {
+       width: 60pt;
+       margin: 15px;
+   }
+
+   @keyframes home {
+       from {
+           transform: translateX(1100px);
+       }
+
+       to {
+           transform: translateX(-1100px);
+       }
+   }
+
+   .home_animation {
+       -webkit-animation: home 7s linear 0s infinite normal none running;
+       animation: home 7s linear 0s infinite normal none running;
+   }
+
+   @keyframes coin {
+       to {
+           visibility: hidden;
+       }
+   }
+
+   #home p {
+       margin-top: 100px;
+       -webkit-animation: coin 1s steps(2, start) 0s infinite alternate none running;
+       animation: coin 1s steps(2, start) 0s infinite alternate none running;
+   }
+
+   section::after {
+       content: '';
+       margin-top: 300px;
+       margin-bottom: 250px;
+       height: 2px;
+       display: block;
+       width: 100%;
+       background: #f7ef48;
+
+   }
+
+   #highscore h3 {
+       color: #ffe31b;
+       font-size: 50pt;
+   }
+
+   #highscore table {
+       font-size: 30pt;
+       text-align: center;
+       margin: 50px auto;
+       width: 100%;
+   }
+
+   #highscore th {
+       padding-bottom: 50px;
+       width: 30%
+   }
+
+   #highscore td {
+       padding-top: 15px;
+   }
+
+   #highscore tr:nth-child(4n+2) {
+       color: #ffaf00;
+   }
+
+   #highscore tr:nth-child(4n+3) {
+       color: #ff3f00;
+   }
+
+   #highscore tr:nth-child(4n+4) {
+       color: #09fdff;
+   }
+
+   #highscore tr:nth-child(4n+5) {
+       color: #fa7ec2;
+   }
+
+   .howtoplay_animation img {
+       width: 60pt;
+       margin: 15px;
+   }
+
+   @keyframes howtoplay {
+       from {
+           transform: translateX(-1100px);
+       }
+
+       to {
+           transform: translateX(1100px);
+       }
+   }
+
+   .howtoplay_animation {
+       -webkit-animation: howtoplay 7s linear 0s infinite normal none running;
+       animation: howtoplay 7s linear 0s infinite normal none running;
+       margin-bottom: 120px;
+   }
+
+   #howtoplay p {
+       margin: 0 5%;
+   }
+
+   #yellow_text {
+       color: #ffe500;
+       padding-top: 50px;
+   }
+
+   #players table {
+       font-size: 30pt;
+       text-align: left;
+       margin: 50px auto;
+       width: 60%;
+   }
+
+   #players td {
+       padding-top: 50px;
+   }
+
+   #players img {
+       width: 60pt;
+       transform: scaleX(-1);
+   }
+
+   #players tr:nth-of-type(2) {
+       color: #ff3f00;
+   }
+
+   #players tr:nth-of-type(3) {
+       color: #fa7ec2;
+   }
+
+   #players tr:nth-of-type(4) {
+       color: #09fdff;
+   }
+
+   #players tr:nth-of-type(5) {
+       color: #ffaf00;
+   }
+
+   #players div {
+       margin: 100px;
+   }
+
+   #players::after {
+       height: 0;
+   }
+
+   footer {
+       margin-top: 400px;
+       font-size: 9px;
+   }
